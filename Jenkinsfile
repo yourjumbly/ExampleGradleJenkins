@@ -6,7 +6,7 @@ pipeline {
 
             steps {
                 script {
-                    sh './gradlew clean build'
+                    bat './gradlew clean build'
                 }
             }
         }
@@ -15,7 +15,7 @@ pipeline {
 
             steps {
                 script {
-                    sh './gradlew clean test'
+                    bat './gradlew clean test'
                 }
             }
         }
