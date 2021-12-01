@@ -20,4 +20,9 @@ pipeline {
             }
         }
     }
+    post {
+      always {
+        junit '**/test-results/text/*.xml'
+      }
+   } 
 }
